@@ -2,8 +2,8 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import {BsSearch} from 'react-icons/bs'
 import {FcGenericSortingAsc, FcGenericSortingDesc} from 'react-icons/fc'
-import ListOfState from '../ListOfState'
-import SearchState from '../SearchState'
+import StateData from '../StateData'
+import SearchResult from '../SearchResult'
 
 import './index.css'
 
@@ -154,7 +154,7 @@ const statesList = [
   },
 ]
 
-class HomeRoute extends Component {
+class DisplayHome extends Component {
   state = {
     isLoading: true,
     searchInput: '',
@@ -296,7 +296,7 @@ class HomeRoute extends Component {
 
         <ul className="state-result-table">
           {listOfCovidStates.map(eachItem => (
-            <ListOfState key={eachItem.stateCode} stateList={eachItem} />
+            <StateData key={eachItem.stateCode} stateList={eachItem} />
           ))}
         </ul>
       </div>
@@ -311,7 +311,7 @@ class HomeRoute extends Component {
         /* testid="searchResultsUnorderedList" */ className="search-container"
       >
         {listOfSearchState.map(eachItem => (
-          <SearchState
+          <SearchResult
             stateName={eachItem.state_name}
             stateCode={eachItem.state_code}
             key={eachItem.state_code}
@@ -395,7 +395,6 @@ class HomeRoute extends Component {
                   className="search-input"
                   placeholder="Enter the State"
                   onChange={this.searchInputList}
-                  /* onAbort={this.searchInputRemove} */
                 />
               </div>
               {searchInput.length > 0 ? searchResult : ''}
@@ -410,4 +409,4 @@ class HomeRoute extends Component {
   }
 }
 
-export default HomeRoute
+export default DisplayHome

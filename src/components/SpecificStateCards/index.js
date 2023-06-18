@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import './index.css'
 
-class StateCards extends Component {
+class SpecificStateCards extends Component {
   state = {
     confirmedCard: {},
     recoveredCard: {},
@@ -148,4 +148,4 @@ class StateCards extends Component {
   }
 }
 
-export default StateCards
+export default SpecificStateCards

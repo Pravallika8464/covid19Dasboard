@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
-import StateCards from '../StateCards'
+import SpecificStateCards from '../SpecificStateCards'
 import TopDistricts from '../TopDistricts'
 import Charts from '../Charts'
 import Footer from '../Footer'
@@ -154,7 +154,7 @@ const statesList = [
   },
 ]
 
-class StateRoute extends Component {
+class StateSpecificRoute extends Component {
   state = {
     isLoading: true,
     totalState: [],
@@ -288,7 +288,7 @@ class StateRoute extends Component {
           } ${stateDate.getDate()} ${stateDate.getFullYear()}.`}</p>
         </div>
         <div className="stateRoute-cards">
-          <StateCards
+          <SpecificStateCards
             stateListCards={this.stateListCards}
             totalStateCards={totalState}
             isStateCard={isStateCard}
@@ -347,4 +347,4 @@ class StateRoute extends Component {
   }
 }
 
-export default StateRoute
+export default StateSpecificRoute

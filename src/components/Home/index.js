@@ -1,11 +1,11 @@
 import Header from '../Header'
-import HomeRoute from '../HomeRoute'
+import DisplayHome from '../DisplayHome'
 import Footer from '../Footer'
 
 const Home = () => (
   <>
     <Header />
-    <HomeRoute />
+    <DisplayHome />
     <Footer />
   </>
 )

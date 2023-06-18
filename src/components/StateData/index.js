@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import './index.css'
 
-const ListOfState = props => {
+const StateData = props => {
   const {stateList} = props
   const {
     stateCode,
@@ -29,4 +29,4 @@ const ListOfState = props => {
   )
 }
 
-export default ListOfState
+export default StateData

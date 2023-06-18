@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import {BiChevronRightSquare} from 'react-icons/bi'
 import './index.css'
 
-const SearchState = props => {
+const SearchResult = props => {
   const {id, stateName, stateCode} = props
 
   return (
@@ -20,4 +20,4 @@ const SearchState = props => {
   )
 }
 
-export default SearchState
+export default SearchResult
