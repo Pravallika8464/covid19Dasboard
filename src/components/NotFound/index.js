@@ -7,7 +7,7 @@ const NotFound = () => (
     <Header />
     <div className="NotFound-container">
       <img
-        src="https://res.cloudinary.com/dvosw6fkt/image/upload/v1662739043/Group_7484_eapvn5.jpg"
+        src="https://res.cloudinary.com/dzub3ltrk/image/upload/v1684422117/Group_7485_zzic0c.png"
         alt="not-found-pic"
       />
       <h1 className="NotFound-heading">PAGE NOT FOUND</h1>

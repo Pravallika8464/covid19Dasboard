@@ -1,6 +1,6 @@
 import './index.css'
 
-const AboutCovidFaqList = props => {
+const CovidFaqList = props => {
   const {answer, question} = props
 
   return (
@@ -11,4 +11,4 @@ const AboutCovidFaqList = props => {
   )
 }
 
-export default AboutCovidFaqList
+export default CovidFaqList

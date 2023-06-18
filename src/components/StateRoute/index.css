@@ -1,6 +1,6 @@
 .StateRoute-container {
   background: #161625;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
+  background-size: cover;
 }
 .stateRouter-column {
   display: flex;
@@ -122,5 +123,5 @@
   display: flex;
   margin-top: 30px;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
 }

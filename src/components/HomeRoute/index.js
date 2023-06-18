@@ -226,12 +226,11 @@ class HomeRoute extends Component {
   searchInputList = event => {
     const search = event.target.value
     const searchList = statesList.filter(eachItem =>
-      eachItem.state_code.toLowerCase().includes(search.toLowerCase()),
+      eachItem.state_name.toLowerCase().includes(search.toLowerCase()),
     )
-
-    return this.setState({
-      searchInput: event.target.value,
+    this.setState({
       listOfSearchState: searchList,
+      searchInput: event.target.value,
     })
   }
 

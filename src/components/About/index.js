@@ -2,8 +2,8 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import Footer from '../Footer'
-import AboutCovidFaqList from '../AboutCovidFaqList'
-import AboutCovidFactList from '../AboutCovidFactList'
+import CovidFaqList from '../CovidFaqList'
+import CovidFactList from '../CovidFactList'
 import './index.css'
 
 class About extends Component {
@@ -52,7 +52,7 @@ class About extends Component {
       <>
         <ul className="About-about-facts" /* testid="faqsUnorderedList" */>
           {aboutFaq.map(eachItem => (
-            <AboutCovidFaqList
+            <CovidFaqList
               answer={eachItem.aboutAnswer}
               question={eachItem.aboutQuestion}
               key={eachItem.aboutQuestionNo}
@@ -63,7 +63,7 @@ class About extends Component {
         <h1 className="About-heading-class">Factoids</h1>
         <ul className="About-about-facts">
           {aboutList.map(eachItem => (
-            <AboutCovidFactList banner={eachItem.banner} key={eachItem.id} />
+            <CovidFactList banner={eachItem.banner} key={eachItem.id} />
           ))}
         </ul>
       </>

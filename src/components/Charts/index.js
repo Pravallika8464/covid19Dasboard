@@ -57,8 +57,6 @@ class Charts extends Component {
           (data[districtCode].dates[eachDate].total.deceased +
             data[districtCode].dates[eachDate].total.recovered),
       }))
-      console.log('datacharts')
-      console.log(dataCharts)
       this.setState({
         chartsList: dataState,
         chartsOther: dataCharts,
@@ -98,7 +96,7 @@ class Charts extends Component {
   graphCharts = () => (
     <div>
       <h1 className="Charts-graph-heading">Spread Trends</h1>
-      <div /* testid="lineChartsContainer" className="lineChart-graph" */>
+      <div /* testid="lineChartsContainer" */ className="lineChart-graph">
         <div className="charts-graph-list-margin charts-graph-red">
           {this.graphList('confirmed', '#FF073A')}
         </div>
@@ -124,7 +122,6 @@ class Charts extends Component {
     const {districtsChart} = this.props
     const barChart = districtsChart.toLowerCase()
     const maxBarChart = chartsList.slice(Math.max(chartsList.length - 10, 0))
-    console.log('this is bar charts', maxBarChart)
 
     let barColor = '#9A0E31'
     if (barChart === 'confirmed') {
